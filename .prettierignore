@@ -1,0 +1,4 @@
+# Ignore prod folder
+.nuxt
+dist
+lambda
