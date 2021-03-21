@@ -38,6 +38,7 @@ export default {
         defaultLanguage: '',
         contentTypes: 'page',
         resolveLinks: 'url',
+        resolveRelations: 'projects-select-container.projects',
       },
     ],
   ],

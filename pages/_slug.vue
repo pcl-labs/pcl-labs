@@ -7,11 +7,10 @@
       :blok="story.content.header.content"
     /> -->
     <component
-      :is="story.content.component | dashify"
+      :is="story.content.component"
       v-if="story.content.component"
       :key="story.content._uid"
       :blok="story.content"
-      :stores="story.content.Stores"
     />
     <!-- <component
       :is="story.content.footer.content.component"
@@ -33,6 +32,7 @@ const loadData = function ({
     .get(`cdn/stories${path}`, {
       version,
       resolve_links: 'story,url',
+      resolve_relations: 'projects-select-container.projects',
       cv: cacheVersion,
     })
     .then((res) => {

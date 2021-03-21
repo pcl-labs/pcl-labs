@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'BlokRecentProjects',
+  name: 'BlokHowWeDidIt',
   props: ['blok'],
 }
 </script>
