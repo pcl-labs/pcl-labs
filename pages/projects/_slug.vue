@@ -78,24 +78,12 @@ export default {
     return loadData({
       version,
       api: context.app.$storyapi,
-      cacheVersion: context.store.state.cacheVersion,
       errorCallback: context.error,
       path,
     })
   },
   data() {
     return { story: { content: {} } }
-  },
-  mounted() {
-    this.$storybridge.on(['input', 'published', 'change'], (event) => {
-      if (event.action === 'input') {
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content
-        }
-      } else if (!event.slugChanged) {
-        window.location.reload()
-      }
-    })
   },
   head() {
     return {
@@ -126,6 +114,17 @@ export default {
         },
       ],
     }
+  },
+  mounted() {
+    this.$storybridge.on(['input', 'published', 'change'], (event) => {
+      if (event.action === 'input') {
+        if (event.story.id === this.story.id) {
+          this.story.content = event.story.content
+        }
+      } else if (!event.slugChanged) {
+        window.location.reload()
+      }
+    })
   },
 }
 </script>

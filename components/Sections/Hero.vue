@@ -5,13 +5,13 @@
       style="border-radius: 16px"
     >
       <div class="flex relative justify-between items-center py-6 px-8">
-        <a aria-current="page" class="cursor-pointer" href="/"
+        <nuxt-link to="/" aria-current="page" class="cursor-pointer"
           ><svg
             width="476"
             height="74"
             viewBox="0 0 476 74"
             fill="none"
-            class="block z-20 w-1/2 h-auto align-middle"
+            class="block z-20 w-5/6 h-auto align-middle"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
@@ -87,37 +87,32 @@
                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAb4AAAAECAYAAADxq1pOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVTSURBVHgB3VlraFtVHP+fc5ObNI8maUzjVmsTKtQ2K5baOUW03YYgOucXG3SM4fDDYP002QcdSIOCwj6OVXCo+9YPwxe2myKydijK7IattQ+6Fkk70trH+kjSRx737//cm3RtEcTmZpD84H/vycnJPff8n79zwgDRAAAfkbxNwklg76VLsIekUFEXq4PQREhtI2JUQum9BWXh4yZoSm4biCjR9RADuIAANdRmorv67Flw9vZCMcCatsL5sfPg2fAgrS5F8rlcIp+rXH5kmb7+gBb8rhhH6wdfKITu7m4Gu0THSAd4Eh7xMPG4ec540J/y90IxANFO14skx0HzE6aLvjS7iGdMSSC96Uv5rkMhQcsfbSQfkpSQMMvYGNQeOwb5QOtMKwT/DiK5GGPIFsnT3vEr/s9IhWnIBYjCBq+SfEJSLnpMkQjbd/QoFBNOT52Gg4sHRV4UcTqHEp6qTlR/Q/pDdYDm52dIGWeowym68mnPfCEQC0D7RLv2QeQjDpPGpPFEJVT+JNbKt4zNBjAiFDaGbcOqCFDytaV5+nWvyVu1c5xM+qHb+6Loscz6RdEvlqInEJfi0FHZAZnkaiQXCCbXkm9cPklt0Lx9i713ncS3geYiUJVNQZGC7bjv8iFMK3oii1M7DWl99P9g4SZ5nsREQlYHLO/shHzhmuealrQJClPs5GcH+qHfDjqCaSFRiLb4Twxbhzf1hwxdoMCT4zAuax1q8feSHKYRjuxv8mnPfEEQpCzIR1Y58s5VWP09W+AFWxPbPFRgyzjIDU3LT4FVsahtUjKmeDKaZKm1+zMAS5g5WykzGGb3mE1zFUaTsjLLS+6MMSkaBT1wxXsFQrGQmlM48PpEMvHKLbh1MbvrcyC6aMtzipqN6nuS2G/fzutOt2rNB751H5iYFcBsSy+WYSJSKSUj1gVTYn3OwKfGOa1f94ATJGDINqSyIIKLdHLyiS8me/jlR8nvdQxyLYGrN0GymEGtfsUEXTmhqi4BNRpVnRUi56wlaSCRsh0ijvIFQeSEP9fF64TaDAoozU6Ds4H8rBd0ANOIvy7xEIgH4LWZ1gy5QSXBk5GYITZIUyRpEi3P8kwAZiZOUl6c9Rrl/udK3TdfcPmjpg0XEXFmI52apqchV/Q5+oDdpddRqMoxilBkDYpNcUAMZrW3UUlMPWR0QLteoFMN0APi9Gn/yn7wrflQ5jYwlXjWl0oxOl4Vj45Wb/Bpy4Idw4N2OfyXnEsebLnXIk79MEPARQkawRR+VQM1sewYtfAp2iJFFDI9Iu/I/EvaxKo9mSh4F2imH2hyVJNhZuqIVzH89pjV9unx0qfv1MsnFAkq3F1doviwXI0sgiNcElaVTB8tyDHoNXq7YAPGxfEMaeAI9QtaoLIdAxVcOroCvSGKDRkCyeCMDJ8mI8yTMUbTHH9VjHx0MCXNfPmWW/7lkLlmei87bJwYOWAdGHASy2J6OHoWYXMYAtFAdodRY1eUZkNK4QkD1zXYN5M5QUpJhX54sBMsc9FHX3j/LgIUCm2XgWiiTPksvfjD2aU4enqYrKPf/hv6nH1MFL4MZaug6zPkdz+Ta+tFs9Qn5+q8dIxN8V+nMkGiNQq9648sydrNYF7VJkGMQ5xosHXbVOweY98+rpiuN3pfXHrIeG6ppcUvUwGiv2DUY+RcIIhDnMcpIVqyvlabjqXL6C4Kn9itCBJjz/g4OG/cyNknxd8fbZNtKlkBbS8UJ38foA1J9wakb8buypPflTP+/ctljj/3GRtjLmOzZWiwqWTwD5/76lX5/645OBPc1CcV+CjN9bUFLCNsi0n/AY/ILPCP6uOEAAAAAElFTkSuQmCC"
               />
             </defs>
-          </svg> </a
-        ><a href="/contact" class="cursor-pointer"
-          ><div class="py-3 px-6 font-sans text-white bg-blue-900">
-            Contact
-          </div></a
-        >
+          </svg>
+        </nuxt-link>
+
+        <div class="space-x-0 space-y-8 lg:space-x-8">
+          <nuxt-link to="/projects">
+            <button class="btn btn-primary min-w-full md:min-w-0">
+              Projects
+            </button>
+          </nuxt-link>
+          <nuxt-link to="/contact">
+            <button class="mt-2 btn min-w-full md:min-w-0">Contact</button>
+          </nuxt-link>
+        </div>
       </div>
       <section class="relative">
-        <div
-          class="flex flex-col px-8 mx-auto w-full lg:flex-row lg:max-w-screen-lg xl:max-w-screen-xl sm:max-w-screen-sm md:max-w-screen-md"
-        >
-          <div class="py-24 w-full lg:h-auto lg:w-5/12" style="height: 48%">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+          <div
+            class="lg:col-span-6 px-4"
+            :class="{ 'py-16': blok.youtube_link, 'py-4': !blok.youtube_link }"
+          >
             <div class="">
               <h1
-                class="z-10 m-0 font-sans text-5xl font-bold leading-none text-gray-900 lg:text-6xl lg:leading-none"
+                class="z-10 m-0 font-sans text-5xl font-bold leading-none text-gray-900 lg:text-6xl lg:leading-none mark"
               >
                 {{ blok.h1_pre }}
-                <span
-                  class="relative z-10 text-6xl bg-no-repeat"
-                  style="
-                    line-height: 0px;
-                    background-size: 100% 10px;
-                    background-position: 0px 88%;
-                    background-image: linear-gradient(
-                      120deg,
-                      rgb(246, 173, 85) 0%,
-                      rgb(246, 173, 85) 100%
-                    );
-                  "
-                  >{{ blok.h1_middle }}</span
-                >
+                <mark class="text-6xl"> {{ blok.h1_middle }} </mark>
                 {{ blok.h1_end }}
               </h1>
             </div>
@@ -126,32 +121,20 @@
                 {{ blok.body }}
               </p>
             </div>
-            <a href="/contact" class="cursor-pointer"
-              ><p
-                class="inline-block py-4 px-8 m-0 font-sans text-white bg-indigo-600 shadow-xs hover:bg-indigo-500"
-              >
-                Get in touch
-              </p></a
-            >
+            <nuxt-link v-if="blok.cta" class="p-8" to="/contact">
+              <button class="btn btn-primary btn-wide btn-lg">
+                {{ blok.cta }}
+              </button>
+            </nuxt-link>
           </div>
-          <div class="w-full lg:h-auto lg:w-7/12" style="height: 48%">
-            <div
-              class="overflow-hidden relative"
-              style="position: relative; overflow: hidden"
-            >
-              <div
-                aria-hidden="true"
-                style="width: 100%; padding-bottom: 80%"
-                class="w-full"
-              ></div>
-              <div class="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/GTKlZyy9dzY"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
+          <div v-if="blok.youtube_link" class="lg:col-span-6 p-8">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                :src="blok.youtube_link"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -166,3 +149,11 @@ export default {
   props: ['blok'],
 }
 </script>
+
+<style scoped>
+mark {
+  background-color: transparent;
+  /* border-bottom: .1em solid #e6fc88; */
+  box-shadow: inset 0 -0.3em 0 0 #f14eb3;
+}
+</style>
