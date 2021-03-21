@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Page from '@/components/postTypes/Page.vue'
+import Page from '@/components/PostTypes/Page.vue'
 
 /* Componets */
 import Hero from '@/components/Sections/Hero.vue'

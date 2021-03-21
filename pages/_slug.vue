@@ -78,7 +78,6 @@ export default {
     return loadData({
       version,
       api: context.app.$storyapi,
-      cacheVersion: context.store.state.cacheVersion,
       errorCallback: context.error,
       path,
     })
