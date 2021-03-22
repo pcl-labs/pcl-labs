@@ -1,5 +1,5 @@
 <template>
-  <div class="leading-6 text-black" v-editable="blok">
+  <div v-editable="blok" class="leading-6 text-black">
     <div
       class="relative mx-4 mt-6 text-black bg-blue-100 bg-indigo-100 lg:mx-6"
       style="border-radius: 16px"
@@ -146,7 +146,12 @@
 <script>
 export default {
   name: 'BlokHero',
-  props: ['blok'],
+  props: {
+    blok: {
+      type: Object,
+      default: null,
+    },
+  },
 }
 </script>
 
