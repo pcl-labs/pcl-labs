@@ -29,7 +29,7 @@ exports.handler = async function (event, context, callback) {
       email: body.email,
     },
     subject: "PCL LAB's - Contact Form",
-    htmlContent: `<html><head></head><body>PCL Labs Contact Form:<br/>--------<br/>Email: ${body.email}<br/>Name: ${body.name}<br/>Phone: ${body.phone}<br/>Message: ${body.message}<br/>Planning Event: ${body.event}<br/>--------</body></html>`,
+    htmlContent: `<html><head></head><body>PCL Labs Contact Form:<br/>--------<br/>Email: ${body.email}<br/>Name: ${body.name}<br/>Phone: ${body.phone}<br/>Message: ${body.message}<br/>--------</body></html>`,
   }
   try {
     console.log(sibData)
@@ -41,7 +41,7 @@ exports.handler = async function (event, context, callback) {
         'content-type': 'application/json',
         'api-key':
           sib_api ||
-          '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',
+          'xkeysib-02ae9b394fc5e7fdbc2ec61exxxxxxxxxxxxx705dc1eba734aff1484c03fcb73-9gV5swDYMvJ0CSz7',
       },
       data: sibData,
     })
