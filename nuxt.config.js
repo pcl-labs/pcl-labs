@@ -29,6 +29,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/markdownit',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     [
@@ -42,7 +43,9 @@ export default {
       },
     ],
   ],
-
+  markdownit: {
+    injected: true,
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
