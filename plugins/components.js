@@ -13,6 +13,7 @@ import Markdown from '@/components/Sections/Markdown.vue'
 import ContactForm from '@/components/Sections/ContactForm.vue'
 import ProjectsSelectContainer from '@/components/Sections/ProjectsSelectContainer.vue'
 import ProjectsCard from '@/components/Sections/ProjectsCard.vue'
+import BookOnUpwork from '@/components/Sections/BookOnUpwork.vue'
 import LightFooter from '@/components/Global/LightFooter.vue'
 
 Vue.component('page', Page)
