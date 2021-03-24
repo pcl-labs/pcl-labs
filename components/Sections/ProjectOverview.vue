@@ -1,5 +1,5 @@
 <template>
-  <div class="relative max-w-lg p-4 mx-auto lg:max-w-7xl">
+  <div v-editable="blok" class="relative max-w-lg p-4 mx-auto lg:max-w-7xl">
     <h2 class="text-xl font-semibold tracking-wider text-blue-600 uppercase">
       {{ blok.soultion }} Project
     </h2>
