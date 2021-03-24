@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-editable="blok">
     <div class="relative mt-10 sm:mt-32 sm:py-16">
       <div aria-hidden="true" class="hidden sm:block">
         <div
