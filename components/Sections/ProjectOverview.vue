@@ -1,15 +1,15 @@
 <template>
-  <div class="p-4 relative max-w-lg mx-auto lg:max-w-7xl">
+  <div class="relative max-w-lg p-4 mx-auto lg:max-w-7xl">
     <h2 class="text-xl font-semibold tracking-wider text-blue-600 uppercase">
       {{ blok.soultion }} Project
     </h2>
     <p
-      class="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-4xl"
+      class="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
     >
       {{ blok.client_company }}
     </p>
     <div>
-      <article class="relative bg-white py-4 sm:py-8">
+      <article class="relative py-4 bg-white sm:py-8">
         <div
           class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start"
         >
@@ -19,10 +19,10 @@
               class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
             >
               <div
-                class="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72"
+                class="absolute inset-y-0 w-full right-1/2 bg-gray-50 rounded-r-3xl lg:right-72"
               ></div>
               <svg
-                class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
+                class="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12"
                 width="404"
                 height="392"
                 fill="none"
@@ -55,14 +55,14 @@
               </svg>
             </div>
             <div
-              class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20"
+              class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20"
             >
               <!-- Review card-->
               <div
-                class="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden"
+                class="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl"
               >
                 <img
-                  class="absolute inset-0 h-full w-full object-cover"
+                  class="absolute inset-0 object-cover w-full h-full"
                   :src="blok.card_image.filename"
                   :alt="blok.card_image.name"
                 />
@@ -86,7 +86,7 @@
                       class="relative text-lg font-medium text-white md:flex-grow"
                     >
                       <svg
-                        class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-400"
+                        class="absolute top-0 left-0 w-8 h-8 text-indigo-400 transform -translate-x-3 -translate-y-2"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                         aria-hidden="true"
@@ -111,16 +111,16 @@
           </div>
 
           <div
-            class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0"
+            class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0"
           >
             <!-- Content area -->
             <div class="pt-12 sm:pt-16 lg:pt-20">
               <h2
-                class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl"
+                class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
               >
                 {{ blok.title }}
               </h2>
-              <div class="mt-6 text-gray-500 space-y-6">
+              <div class="mt-6 space-y-6 text-gray-500">
                 <p v-html="blok.description" />
               </div>
             </div>
@@ -128,7 +128,7 @@
             <!-- Stats section -->
             <div class="mt-10">
               <dl class="grid grid-cols-2 gap-x-4 gap-y-8">
-                <div class="border-t-2 border-gray-100 pt-6">
+                <div class="pt-6 border-t-2 border-gray-100">
                   <dt class="text-base font-medium text-gray-500">Soultion</dt>
                   <dd
                     class="text-3xl font-extrabold tracking-tight text-gray-900"
@@ -137,7 +137,7 @@
                   </dd>
                 </div>
 
-                <div class="border-t-2 border-gray-100 pt-6">
+                <div class="pt-6 border-t-2 border-gray-100">
                   <dt class="text-base font-medium text-gray-500">
                     Time Frame
                   </dt>
@@ -148,16 +148,16 @@
                   </dd>
                 </div>
 
-                <div class="border-t-2 border-gray-100 pt-6">
-                  <dt class="text-base font-medium text-gray-500">Budget</dt>
+                <div class="pt-6 border-t-2 border-gray-100">
+                  <dt class="text-base font-medium text-gray-500">Tools</dt>
                   <dd
                     class="text-3xl font-extrabold tracking-tight text-gray-900"
                   >
-                    {{ blok.budget }}
+                    {{ blok.tools }}
                   </dd>
                 </div>
 
-                <div class="border-t-2 border-gray-100 pt-6">
+                <div class="pt-6 border-t-2 border-gray-100">
                   <dt class="text-base font-medium text-gray-500">Result</dt>
                   <dd
                     class="text-3xl font-extrabold tracking-tight text-gray-900"
