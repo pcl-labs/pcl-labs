@@ -12,7 +12,6 @@
       />
     </div>
     <div>
-      {{ blok.after_image }}
       <h2 class="text-2xl font-bold text-center">After</h2>
       <img
         v-if="blok.after_image"
