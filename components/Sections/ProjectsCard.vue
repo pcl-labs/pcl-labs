@@ -17,9 +17,7 @@
           >{{ project.soultion }}</span
         >
         <h2 class="mt-2 mb-2 font-bold">{{ project.title }}</h2>
-        <p class="text-sm">
-          {{ project.description }}
-        </p>
+        <p class="text-sm" v-html="$md.render(project.description)"></p>
         <div class="flex items-center mt-3">
           <span class="text-sm font-semibold">Tools</span>&nbsp;<span
             class="text-xl font-bold"
