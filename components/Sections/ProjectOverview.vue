@@ -121,7 +121,7 @@
                 {{ blok.title }}
               </h2>
               <div class="mt-6 space-y-6 text-gray-500">
-                <p v-html="blok.description" />
+                <p v-html="$md.render(blok.description)" />
               </div>
             </div>
 
