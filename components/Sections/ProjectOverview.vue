@@ -67,11 +67,11 @@
                   :alt="blok.card_image.name"
                 />
                 <div
-                  class="absolute inset-0 bg-indigo-500"
+                  class="absolute inset-0 bg-blue-500"
                   style="mix-blend-mode: multiply"
                 ></div>
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90"
+                  class="absolute inset-0 opacity-40 bg-gradient-to-t from-blue-700 via-blue-700"
                 ></div>
                 <div class="relative px-8">
                   <div>
@@ -86,7 +86,7 @@
                       class="relative text-lg font-medium text-white md:flex-grow"
                     >
                       <svg
-                        class="absolute top-0 left-0 w-8 h-8 text-indigo-400 transform -translate-x-3 -translate-y-2"
+                        class="absolute top-0 left-0 w-8 h-8 text-blue-400 transform -translate-x-3 -translate-y-2"
                         fill="currentColor"
                         viewBox="0 0 32 32"
                         aria-hidden="true"
@@ -167,10 +167,13 @@
                 </div>
               </dl>
               <div class="mt-10">
-                <a href="#" class="text-base font-medium text-indigo-600">
+                <nuxt-link
+                  to="/contact"
+                  class="text-base font-medium text-indigo-600"
+                >
                   Learn more about how we're changing the world
                   <span aria-hidden="true">&rarr;</span>
-                </a>
+                </nuxt-link>
               </div>
             </div>
           </div>
